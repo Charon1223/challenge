@@ -178,7 +178,6 @@ main h1 span{
 }
 .card:hover{
   transform: scale(1.01);
-  transition: .3s ease-out;
 }
 .card a{
   position: absolute;
@@ -619,8 +618,6 @@ footer p{
   flex-direction: column;
 }
 .footer-menu__wrap ul{
-  display: grid;
-  grid-template-columns: auto;
   height: auto;
 }
 .footer-menu__link{
