@@ -43,6 +43,7 @@ a{
   .burger{
     display: flex;
     justify-content: center;
+    cursor: pointer;
   } 
   .fa-hamburger::before{
     display: flex;
