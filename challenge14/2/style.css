@@ -1,0 +1,70 @@
+body{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: coral;
+  color: #fff;
+}
+
+#notebook{
+display: none;
+}
+#tablet{
+display: none;
+}
+#mobile-1{
+display: none;
+}
+#mobile-2{
+display: none;
+}
+
+@media screen and (max-width:1279px){
+  body{
+    background-color: blueviolet;
+  }
+  #notebook{
+    display: block;
+  }
+  #pc-width{
+    display: none;
+  }
+}
+
+@media screen and (max-width:1024px){
+  body{
+    background-color: rgb(22, 149, 161);
+  }
+  #notebook{
+    display: none;
+  }
+  #tablet{
+    display: block;
+  }
+}
+
+@media screen and (max-width:768px){
+  body{
+    background-color: rgb(126, 161, 22);
+  }
+  #tablet{
+    display: none;
+  }
+  #mobile-1{
+    display: block;
+  }
+}
+
+@media screen and (max-width:480px){
+  body{
+    background-color: rgb(212, 85, 46);
+  }
+  #mobile-1{
+    display: none;
+  }
+  #mobile-2{
+    display: block;
+  }
+}

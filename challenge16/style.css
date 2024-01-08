@@ -1,0 +1,242 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #e9e9e9;
+  font-family: 'Noto Serif KR', serif;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+li{
+  list-style: none;
+}
+.head-container{
+  background-image: url('img/mudo.jpeg');
+  height: 500px;
+  position: relative;
+  background-position: center;
+}
+.head-container::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  background-color: rgba(0, 0, 0, .6);
+}
+.head-title{
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  background-color:rgb(196, 235, 190);
+  width: 100%;
+  height: 100px;
+  padding: 10px 0;
+}
+.head-title::before{
+  background-color: rgba(0, 0, 0, .7);
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 0;
+}
+.head-title span, p{
+  z-index: 2;
+}
+.head-title p{
+  font-size: 45px;
+  margin: 0 20px;
+  font-weight: 500;
+}
+.head-title span{
+  font-size: 40px;
+}
+.head-title span:first-child{
+  animation: blink .2s infinite alternate;
+}
+.head-title span:last-child{
+  animation: blink2 .2s infinite alternate;
+}
+@keyframes blink {
+  from{
+    opacity: -1;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+@keyframes blink2 {
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: -1;
+  }
+}
+
+
+/* 네비메뉴 */
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 75px;
+  background-color: #090809;
+  padding: 0 30px;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+nav span{
+  font-size: 60px;
+}
+nav ul{
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+}
+nav ul li{
+  font-size: 20px;
+}
+nav ul li a{
+  padding: 25px 0;
+}
+.fa-bars{
+  display: none;
+}
+
+
+/* 메인 */
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 120px;
+}
+main h2{
+  font-size: 26px;
+  color: #c75ddb;
+  font-weight: 500;
+  margin-top: 120px;
+}
+main h1{
+  font-size: 72px;
+  margin-top: 80px;
+  font-weight: 600;
+}
+.wrap{
+  display: flex;
+  justify-content: space-between;
+  gap: 120px;
+  margin-top: 200px;
+}
+.wrap .card{
+  background-color: #a674ad;
+  border-radius: 40px;
+  width: 400px;
+  height: 580px;
+  transition: all .5s;
+}
+.wrap .card:hover{
+  scale: 1.01;
+  backdrop-filter: blur(200px);
+  font-size: 20px;
+  transform: rotate(5deg);
+}
+.wrap .card:hover::before{
+  content:"";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 40px;
+  width: 100%;
+  height: 370px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+.wrap .card img{
+  width: 80%;
+  padding-top: 50px;
+}
+.wrap .card p:nth-of-type(1){
+  font-size: 30px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+.wrap .card p:nth-of-type(2){
+  margin-top: 30px;
+  font-weight: 600;
+}
+.wrap .card:first-child a p:nth-of-type(1){
+  color: rgb(83, 167, 223);
+}
+.wrap .card:first-child a p:last-child{
+  margin-top: 30px;
+}
+.wrap .card:nth-of-type(2) a p:nth-of-type(1){
+  color: rgb(100, 237, 152);
+}
+.wrap .card:nth-of-type(3) a p:nth-of-type(1){
+  color: rgb(236, 227, 147);
+}
+.click{
+  display: flex;
+}
+
+
+/* 미디어쿼리 */
+@media screen and (max-width: 768px ) {
+  .head-title p{
+    font-size: 30px;
+  }
+  nav{
+    padding: 0;
+  }
+  nav ul{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    background-color: #090809;
+  }
+  nav ul li{
+    padding: 20px;
+    border-bottom: 1px solid #4e4e4e;
+    width: 100%;
+    text-align: center;
+  }
+  .fa-bars{
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 22px;
+    transition: .1s all ease;
+  }
+
+  .wrap{
+    display: flex;
+    flex-direction: column;
+  }
+}
