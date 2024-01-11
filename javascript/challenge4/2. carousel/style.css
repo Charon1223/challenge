@@ -1,0 +1,53 @@
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  margin: 0 auto;
+}
+.carousel-wrap{
+  width: 600px;
+  height: 500px;
+  overflow: hidden;
+  box-shadow: 3px 3px 3px #999;
+  border-radius: 10px;
+}
+.carousel{
+  display: flex;
+  transform: translateX(0);
+  transition: transform .2s;
+}
+img{
+  width: 600px;
+  height: 500px;
+}
+.remote{
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  justify-content: center;
+  gap: 10px;
+}
+.remote button{
+  border: none;
+  background-color: coral;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  color: #fff;
+  box-shadow: 3px 3px 3px #999;
+  cursor: pointer;
+}
+.remote button:hover{
+  background-color: rgb(185, 94, 61);
+}

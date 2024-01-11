@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회원가입</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>회원가입</h1>
+  </header>
+
+  <main>
+    <form method="#" action="#">
+      <div class="input-set">
+        <label for="email"><strong>이메일: </strong><br></label>
+        <input type="email" name="email" id="email" placeholder="이메일을 입력하세요">
+      </div>
+      <div class="input-set">
+        <label for="name"><strong>이름: </strong><br></label>
+        <input type="text" name="name" id="name" placeholder="이름">
+      </div>
+      <div class="input-set">
+        <label for="password"><strong>비밀번호: </strong><br></label>
+        <input type="password" name="password" id="password" placeholder="비밀번호">
+      </div>
+      <div class="input-set">
+        <label for="phone"><strong>전화번호: </strong><br></label>
+        <div id="phone">
+          <input type="number" name="phone"  id="phone1" placeholder="010">-
+          <input type="number" name="phone" id="phone2" placeholder="0000">-
+          <input type="number" name="phone" id="phone3" placeholder="0000">
+        </div>
+        <input type="submit" id="chk-num" value="인증번호 전송"></input>
+      </div>
+      <div class="input-set">
+        <label for="check-number"><strong>인증번호: </strong><br></label>
+        <input type="number" name="check-number" id="check-number" placeholder="인증번호를 입력하세요">
+      </div>
+      <div class="input-set">
+        <label for="location"><strong>지역: </strong></label>
+        <select id="location">
+          <option value="">지역을 선택해주세요</option>
+          <option value="서울" name="location">서울</option>
+          <option value="인천" name="location">인천</option>
+          <option value="경기" name="location">경기</option>
+          <option value="강원" name="location">강원</option>
+          <option value="chungbuk" name="location">충북</option>
+          <option value="chungnam" name="location">충남</option>
+          <option value="sejong" name="location">세종</option>
+          <option value="daejeon" name="location">대전</option>
+          <option value="kyungbuk" name="location">경북</option>
+          <option value="kyungnam" name="location">경남</option>
+          <option value="daegu" name="location">대구</option>
+          <option value="ulsan" name="location">울산</option>
+          <option value="busan" name="location">부산</option>
+          <option value="jeonbuk" name="location">전북</option>
+          <option value="jeonnam" name="location">전남</option>
+          <option value="kwangju" name="location">광주</option>
+          <option value="jeju" name="location">제주</option>
+      </select>
+      </div>
+      <input type="submit" id="join" value="회원가입"></input>
+    </form>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
