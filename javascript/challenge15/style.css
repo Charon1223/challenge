@@ -1,0 +1,59 @@
+
+
+body{
+  background-color: aliceblue;
+}
+h1{
+  margin: 0;
+  color: #fff;
+}
+.container{
+  background-color: #6ea9d3;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+}
+.buttons{
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  gap: 10px;
+}
+#start:hover{
+  cursor: pointer;
+  scale: 1.05;
+}
+#start:active{
+  scale:1;
+}
+#reset:hover{
+  cursor: pointer;
+  scale: 1.05;
+}
+#reset:active{
+  scale:1;
+}
+#start, #reset{
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+}
+.numbers{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+.each{
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-weight: 700;
+}
+.numbers::before{
+  content: "로또 번호: ";
+}
