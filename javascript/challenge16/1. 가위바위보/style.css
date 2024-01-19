@@ -1,0 +1,57 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.computer{
+  margin-top: 50px;
+  text-align: center;
+  background-color: blueviolet;
+  padding: 30px 0;
+}
+.my-turn{
+  text-align: center;
+}
+h1, label{
+  color: #fff;
+}
+img{
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+  margin-bottom: 20px;
+}
+label{
+  display: block;
+  margin-bottom: 10px;
+}
+#input{
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline-color: blueviolet;
+}
+#result{
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+}
+#result:hover{
+  scale: 1.05;
+  cursor: pointer;
+}
+#result:active{
+  scale: 1;
+}
+#my-img{
+  display: none;
+  margin: 0 auto;
+}
+p{
+  color: #fffd7a;
+  font-weight: 900;
+  font-size: 35px;
+  margin-top: 20px;
+}

@@ -1,0 +1,35 @@
+body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.images{
+  width: 500px;
+  height: 500px;
+  background-size: cover;
+  /* border: 1px solid #ccc; */
+  margin: 0 auto;
+  border-radius: 10px;
+  /* box-shadow: 3px 3px 10px #888; */
+}
+.stop{
+  text-align: center;
+  margin: 20px auto 0;
+  font-size: 16px;
+  padding: 10px 30px;
+  display: block;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px #5b5b5b;
+  transition: .1s all ease-in-out;  
+}
+.stop:hover{
+  cursor: pointer;
+  background-color: lightcoral;
+  color: #fff;
+}
+
+.stop:active{
+  background-color: rgb(228, 79, 79);
+  transition: none;
+}
