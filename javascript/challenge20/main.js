@@ -11,9 +11,9 @@ const arr = [
   { name: "수지", score: 86 },
 ];
 
-const sortedArr = [...arr]; // 원래 배열을 변경하지 않기 위해 복사본 생성
+const sortedArr = [...arr]; 
 
-sortedArr.sort((a, b) => a.score - b.score);
+sortedArr.sort((a, b) => b.score - a.score);
 
 sortedArr.forEach((item) => {
   const trEl = document.createElement("tr");
